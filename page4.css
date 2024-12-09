@@ -1,0 +1,133 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --base-width: 1600px;
+  --base-height: 1200px;
+  --scale-factor: 1;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#linked-content {
+  width: 1400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#info-box-page4 {
+  width: 300px;
+  height: 550px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 150px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+}
+
+#main-container4 {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  position: relative;
+  transform-origin: top left;
+}
+
+.chart-title4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #2c3e50;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  display: block;
+}
+
+.slider-container4 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#chart-container4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#pie-chart-page4 {
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tree-container-page4 {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  fill: none;
+  stroke: #7f8c8d;
+  stroke-width: 2px;
+}
+
+.node circle {
+  fill: #74b9ff;
+  stroke: #2d3436;
+  stroke-width: 2px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.node circle:hover {
+  fill: #ffeaa7;
+}
+
+.node text {
+  font-size: calc(12px * var(--scale-factor));
+  text-anchor: middle;
+  font-family: Arial, sans-serif;
+  fill: #333;
+}
+
+.slider .track {
+  stroke: #dfe6e9;
+}
+
+.slider .track-inset {
+  stroke: #b2bec3;
+}
+
+.slider .tick text {
+  fill: #636e72;
+}

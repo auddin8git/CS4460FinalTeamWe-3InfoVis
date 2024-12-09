@@ -1,0 +1,221 @@
+:root {
+  --base-width: 800px;
+  --base-height: 600px;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-sizing: border-box;
+  min-height: 100vh; 
+}
+
+#page2-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#textbox-container-page2 {
+  width: 300px;
+  height: 620px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 110px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #bbb;
+  border-radius: 10px;
+}
+
+#main-container2 {
+  width: 100%;
+  max-width: var(--base-width);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 10px; /* Necessary */
+  /* border: 2px solid #000;
+  border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #8e9eab);
+  margin: 0;
+  padding: 0;
+}
+
+h1.chart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+
+
+.slider-container2 {
+  width: 100%; 
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box; 
+}
+
+#table-container-page2 {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; 
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #444;
+  box-sizing: border-box; 
+}
+
+table th {
+  background-color: #3a86ff;
+  color: white;
+  font-weight: bold;
+}
+
+table td:first-child {
+  font-weight: bold;
+  color: #ff006e;
+}
+
+#metricSelector-page2 {
+  display: block;
+  width: 100%; 
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #444;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+}
+
+#metricSelector-page2:hover {
+  background-color: #e0e0e0;
+}
+
+#reset-button-page2 {
+  background-color: #3a86ff; 
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; 
+}
+
+#reset-button-page2:hover {
+  background-color: #1976d2; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#bar-chart-page2 {
+  width: 100%; 
+  height: 300px;
+  background: none;
+  padding: 0;
+  margin-top: -10px;
+  box-sizing: border-box;
+}
+
+.node circle {
+  stroke-width: 2px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.node circle:hover {
+  fill: #ffeaa7; 
+}
+
+.node text {
+  font-size: 12px;
+  text-anchor: middle;
+  font-family: Arial, sans-serif;
+  fill: #333; 
+}
+
+.slider .track {
+  stroke: #dfe6e9; 
+}
+
+.slider .track-inset {
+  stroke: #b2bec3; 
+}
+
+.slider .tick text {
+  fill: #636e72; 
+}
+
+ul {
+  display: block; 
+  list-style-type: disc; 
+  margin: 10px 0; 
+  padding-left: 20px; 
+}
+
+li {
+  display: list-item; 
+}

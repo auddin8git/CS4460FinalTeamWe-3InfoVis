@@ -1,0 +1,219 @@
+:root {
+  --base-width: 800px;
+  --base-height: 600px;
+  --scale-factor: 0.8;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#page7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+#outer-container-page7 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#left-container-page7 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#textbox-container-page7 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 105px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#random-show-container-page7 {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #aaa;
+  border-radius: 10px;
+}
+
+#main-container7 {
+  width: 100%;
+  max-width: var(--base-width);
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transform: scale(var(--scale-factor));
+  transform-origin: top left;
+  overflow-y: auto;
+  max-height: calc(100vh - 0px);
+  border: 2px solid #aaa;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.chart-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #2c3e50;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  display: block;
+}
+
+.filters-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-group {
+  margin: 8px 0;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.slider-container {
+  width: calc(100% - 40px);
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#scatter-plot {
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+select {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#random-show-display {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  pointer-events: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dot {
+  transition: all 0.2s ease;
+}
+
+.highlighted-dot {
+  cursor: pointer;
+  filter: drop-shadow(0 0 3px rgba(255, 51, 51, 0.3));
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+.parameter-value {
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 10px;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  display: inline-block;
+}

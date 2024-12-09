@@ -1,0 +1,60 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+#page8 {
+    background: linear-gradient(135deg, #f9f9f9, #dfe6e9); 
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+#page8 h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+#page8 p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.team-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+  
+.team-member {
+    width: 256px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.team-member img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%; 
+    border: 4px solid #2c3e50; 
+    object-fit: cover; 
+}
+  
+.team-member .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.team-member .major {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}

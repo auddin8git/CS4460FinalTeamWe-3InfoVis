@@ -1,0 +1,127 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.bar {
+  fill-opacity: 0.8;
+}
+
+.bar:hover {
+  fill-opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+#all-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#instructions-containerCOMPLEX {
+  width: 350px;
+  height: 500px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: left;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+}
+
+.chart-titleCOMPLEX {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #2c3e50;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  display: block;
+}
+
+.parameter-valueCOMPLEX {
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#chart-containerCOMPLEX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#sub-containerCOMPLEX {
+  height: 400px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#info-boxCOMPLEX {
+  height: 280px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#image-boxCOMPLEX {
+  height: 450px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#image-boxCOMPLEX image {
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+#metricSelectorCOMPLEX {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#changeXAxisButtonCOMPLEX {
+  display: block;
+  margin: -10px auto;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#changeXAxisButtonCOMPLEX:hover {
+  background-color: #0056b3;
+}
+
+.axis-labelCOMPLEX {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}

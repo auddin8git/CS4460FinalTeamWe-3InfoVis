@@ -1,0 +1,128 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure full height context */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar Styles */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Unique Background Colors */
+#page1 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black;}
+#page2 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black; }
+#page3 { background: linear-gradient(135deg, #94dee5, #ffffff); color: #333; }
+#page4 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black; }
+#page5 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black; }
+#page6 { background: linear-gradient(135deg, #94dee5, #ffffff); color: #333; }
+#page7 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black; }
+#page8 { background: linear-gradient(135deg, #94dee5, #ffffff); color: #333; }
+#page9 { background: linear-gradient(135deg, #94dee5, #ffffff); color: black; }
+#page10 { background: linear-gradient(135deg, #94dee5, #ffffff); color: #333; }
+
+/* Scroll Tracker Styles */
+.scroll-tracker {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tracker-circle {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tracker-circle.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+/* Scroll Snap Properties on HTML Only */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity; 
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+#welcome {
+  background: #94DEE5 url('televisionModel.png') no-repeat bottom right; /* Combine background color and image */
+  background-size: auto; /* Maintain the original size of the image */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  color: white; 
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
+
+  padding-bottom: 10%;
+}
+
+#welcome h1 {
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif; 
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+#welcome p {
+  font-size: 1.8rem; 
+  margin: 0.5rem 0;
+  font-family: 'Montserrat', sans-serif; 
+}

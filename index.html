@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Page D3 Graphs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script> <!-- D3.js Library -->
+  <script src="https://unpkg.com/d3-simple-slider"></script>
+
+</head>
+<body>
+  <div class="scroll-tracker">
+    <span data-target="#welcome" class="tracker-circle"></span> 
+    <span data-target="#page0-5" class="tracker-circle"></span> 
+    <span data-target="#page1" class="tracker-circle"></span>
+    <span data-target="#page2" class="tracker-circle"></span>
+    <span data-target="#page3" class="tracker-circle"></span>
+    <span data-target="#page4" class="tracker-circle"></span>
+    <span data-target="#page5" class="tracker-circle"></span>
+    <span data-target="#page6" class="tracker-circle"></span>
+    <span data-target="#page7" class="tracker-circle"></span>
+    <span data-target="#page8" class="tracker-circle"></span>
+  </div>
+
+  <!-- Welcome Page -->
+  <section id="welcome">
+    <h1>Networks and Narratives:
+      <br> Exploring the Evolution
+      <br> of Television Platforms and Genres
+    </h1>
+    <p>Justin Vincent Arnest Eli</p>
+  </section>
+
+
+  <!-- Page 0.5 -->
+  <section id="page0-5">
+    <link rel="stylesheet" href="page0.5.css">
+    <h1 class="chart-title">Introduction to Television Networks</h1>
+    <p id="page0-5-description">
+      The evolution of television platforms has changed how audiences consume media,
+      transitioning from traditional cable and broadcast networks to streaming services that are readily accessible.
+      Early platforms focused on scheduled programming, where viewers tuned in at specific times,
+      but the rise of digital technology introduced unprecedented flexibility. Tune in as we cover the rise of modern
+      network giants and the trends that accompany this transformation.
+    </p>
+  </section>
+
+
+  <!-- Page 1 -->
+  <section id="page1">
+    <h1 class="chart-title">Streaming Service Launch Timeline</h1>
+    <div id="timeline"></div>
+    <script src="page1.js"></script>
+
+  </section>
+  
+
+<!-- Page 2 -->
+<section id="page2">
+  <link rel="stylesheet" href="page2.css">
+  <div id="page2-content">
+    <div id="textbox-container-page2">
+      <p id="text2">
+        This visualization shows the most popular networks over time.
+        <br> <br> Use the <strong>slider</strong> to adjust the year range and observe how the popularity of networks
+        changes over the years.
+        <br> <br> It wasn't until the late 2000s that networks like Netflix and Hulu started their streaming services. Set the slider from
+        <strong>1990-2010</strong>, and again at <strong>2010-2024</strong>. Observe the changes in the prevalent networks!
+        <br> <br> Want some more information?
+      </p>
+      <ul> 
+        <li> Select different metrics from the <strong>drop down</strong> to view the data from different perspectives </li>
+        <li> <strong>Hover</strong> or <strong>click</strong> on the Treemap to reveal more details about the Network! </li>
+        <li> Click the <strong>Reset button</strong> to start over</li>
+      </ul>
+    </div>
+    <div id="main-container2">
+      <div class="container">
+        <h1 class="chart-title">Most Popular Networks Over Time</h1>
+      </div>
+      <div class="container">
+        <div class="slider-container2">
+          <div id="year-slider-page2"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="table-container-page2">
+          <table>
+            <thead>
+              <tr>
+                <th>Network</th>
+                <th>Most Popular Genre</th>
+                <th>Most Popular Show</th>
+              </tr>
+            </thead>
+            <tbody id="table-body-page2"></tbody>
+          </table>
+          <select id="metricSelector-page2">
+            <option value="vote_count">Vote Count</option>
+            <option value="popularity">Popularity</option>
+          </select>
+          <!-- Explicitly including the reset button -->
+          <button id="reset-button-page2">Reset to Networks</button>
+        </div>
+      </div>
+      <div class="container">
+        <div id="bar-chart-page2"></div>
+      </div>
+    </div>
+  </div>
+  <script src="page2.js"></script>
+</section>
+
+
+  <!-- Page 4 -->
+  <section id="page4">
+    <link rel="preload" href="page4.css" as="style">
+    <link rel="stylesheet" href="page4.css">
+
+    <div id="linked-content">
+      <div id="info-box-page4">
+        <p>
+          This chart visualizes the evolution of popular genres over time.
+          <br> <br> Use the <strong>slider</strong> to adjust the year range and observe how genres have risen or fallen in popularity. Key trends:
+        </p>
+        <ul>
+          <li>Genre diversity increases over the years.</li>
+          <li>The most popular genres vary by decade, but Drama and Comedy remain dominant.</li>
+          <li>The number of shows produced in the past 5 years is roughly half the number of shows produced from 1990 to 2024. </li>
+        </ul>
+        <p>
+          <strong>Hover</strong> over sections of the pie chart to see the genre and number of shows produced in that time.
+          <br> <br> <strong>Hover</strong> over nodes of the graph to see the top 5 genres of all time and their 3 most popular shows.
+        </p>
+      </div>
+  
+      <div id="main-container4">
+        <h1 class="chart-title">Evolution of the Most Popular Genres</h1>
+  
+        <div class="slider-container4">
+          <div id="year-slider-page4"></div>
+        </div>
+  
+        <div id="chart-container4">
+          <div id="pie-chart-page4"></div>
+          <div id="tree-container-page4"></div>
+        </div>
+      </div>
+    </div>
+    <script src="page4.js"></script>
+  </section>
+
+  <!-- Page 5 -->
+  <section id="page5">
+    <link rel="preload" href="page5.css" as="style">
+    <link rel="stylesheet" href="page5.css">
+    <div id="stackedbar-content">
+      <div id="info-box-page5">
+        <p>
+          This visualization highlights the distribution of genres across different networks over time.
+          <br> <br> <strong>Adjust the slider</strong> below to explore changes in genre and network dominance across various periods.
+          <br> <br> Media Streaming Services cater to diverse, global audiences but still strive to be different in the market:
+        </p>
+
+        <ul>
+          <li> Netflix: explores niche genres, including international shows and adult animation </li>
+          <li> Prime video: has outstanding original dramas </li>
+          <li> Hulu: emphasis on true crime and live TV (news and sports) </li>
+          <li> Disney+: focuses on family-friendly content, offering animation and sci-fi/fantasy originals </li>
+        </ul>
+        <p> Traditional TV Channels focus more on ad-driven content aimed at mass-market audiences:</p>
+        <ul>
+          <li> CBS: produces procedural dramas, reality TV, and has a strong presence in live events </li>
+          <li> NBC: historically having huge primetime dramas, comedy serires, as well live events </li>
+          <li> Fox: known for edgy and youth-oriented content, often broadcasting animated shows </li>
+        </ul>
+        <p>
+          In the past 5 years, Netflix, Prime video, Hulu, and Disney+ are the top networks in nearly every genre.
+        </p>
+
+
+      </div>
+    
+      <div id="main-container5">
+        <h1 class="chart-title5">Genre Distribution Across Networks</h1>
+        <div class="slider-container5">
+          <div id="year-slider-page5"></div>
+          <div id="year-range-page5" class="parameter-value5"></div>
+        </div>
+        <div id="chart-container5">
+          <div id="chart5"></div>
+        </div>
+      </div>
+    </div>
+    <script src="page5.js"></script>
+  </section>
+
+  <!-- Page 6 -->
+  <section id="page6">
+    <link rel="stylesheet" href="page6.css">
+    <h1 class="chart-titleCOMPLEX">Iconic TV Shows: Immeasurably Important</h1>
+    <div id="all-content">
+      <div id="instructions-containerCOMPLEX">
+        <p>
+          While numbers like viewership and popularity provide valuable insights into a TV show's success, they don't tell the whole story.
+          A show's cultural impact—its ability to shape societal trends, inspire spin-offs, or generate iconic quotes—often transcends raw statistics.
+          Thus, it's worth looking at individual shows and the legacies they leave behind.
+          <br> <br> Use the <strong>dropdown menu</strong> to switch between popularity and vote count as metrics.
+          <br> <br> <strong>Click a bar</strong> to how the show influenced the network and media as whole.
+          <br> <br> Adjust the time range using the <strong>"Change X-Axis Range" button</strong>.
+        </p>
+      </div>
+    
+      <div id="chart-containerCOMPLEX">
+        <div id="chartCOMPLEX"></div>
+        <div id="sub-containerCOMPLEX">
+          <div id="legend-containerCOMPLEX">
+            <div id="legendCOMPLEX"></div>
+          </div>
+          <div id="info-boxCOMPLEX">
+            <p>Click on a bar to see details here.</p>
+          </div>
+        </div>
+        <div id="image-boxCOMPLEX">
+          <img src="./images/ColorBars.png" alt="Image for BLANK" style="width: 100%; border-radius: 8px; margin-top: 25px;"/>
+        </div>
+      </div>
+    </div>
+
+    <select id="metricSelectorCOMPLEX">
+      <option value="vote_count">Vote Count</option>
+      <option value="popularity">Popularity</option>
+    </select>
+    <button id="changeXAxisButtonCOMPLEX">Change X-Axis Range</button>
+
+    <script src="page6.js"></script>
+  </section>
+
+  <!-- Page 7 -->
+  <section id="page7">
+    <link rel="stylesheet" href="page7.css">
+    <div id="outer-container-page7">
+      <div id="left-container-page7">
+        <div id="textbox-container-page7">
+          <p>
+            This interactive feature allows users to input their preferences, including genre,
+            language, episode length, and number of seasons, to generate a personalized TV show.
+            <br> <br> Now that you know about the trends and influence of shows across time, turn on the
+            TV, visit your favorite network, and find something to watch today!
+          </p>
+        </div>
+        <div id="random-show-container-page7">
+          <button id="random-show-btn">Get Random Show</button>
+          <div id="random-show-display"></div>
+        </div>
+      </div>
+      <div id="main-container7">
+        <div class="container">
+          <h1 class="chart-title">Find a Show to Watch Today!</h1>
+        </div>
+        <div class="container">
+          <div class="filters-container">
+            <div class="filters">
+              <div class="filter-row">
+                <div class="filter-group">
+                  <label>Genre:</label>
+                  <select id="genre-filter">
+                    <option value="">All Genres</option>
+                  </select>
+                </div>
+
+                <div class="filter-group">
+                  <label>Language:</label>
+                  <select id="language-filter">
+                    <option value="">All Languages</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="filter-row">
+                <div class="filter-group">
+                  <label>Episode Length (minutes):</label>
+                  <div class="slider-container">
+                    <div id="episode-slider"></div>
+                    <div id="episode-range-display" class="parameter-value"></div>
+                  </div>
+                </div>
+
+                <div class="filter-group">
+                  <label>Number of Seasons:</label>
+                  <div class="slider-container">
+                    <div id="season-slider"></div>
+                    <div id="season-range-display" class="parameter-value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="scatter-plot"></div>
+        </div>
+      </div>
+    </div>
+    <script src="page7.js"></script>
+  </section>
+
+  <!-- Page 8 -->
+  <section id="page8">
+    <link rel="stylesheet" href="page8.css">
+    <div class="thank-you-container">
+      <h1>Thank You for exploring our data story!</h1>
+      <p>All sources, code, and processed data can be found at <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer">this GitHub link</a>.</p>
+    </div>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="justinheadshot.jpg" alt="Headshot of Member 1" />
+        <p class="name">Justin Yang</p>
+        <p class="major">B.S in Computer Science</p>
+      </div>
+      <div class="team-member">
+        <img src="vincentheadshot.jpg" alt="Headshot of Member 3" />
+        <p class="name">Vincent Tran</p>
+        <p class="major">B.S in Computer Science</p>
+      </div>
+      <div class="team-member">
+        <img src="eliheadshot.jpg" alt="Headshot of Member 4" />
+        <p class="name">Eli Chen</p>
+        <p class="major">B.S in Computer Science</p>
+      </div>
+      <div class="team-member">
+        <img src="arnestheadshot.jpg" alt="Headshot of Member 2" />
+        <p class="name">Arnest Uddin</p>
+        <p class="major">B.S in Computer Science</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
