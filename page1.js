@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Streaming service data with logos
   const data = [
-    { service: "Netflix", date: new Date("August 29, 1997"), logo: "logos/netflix.png" },
-    { service: "Fox", date: new Date("October 9, 1986"), logo: "logos/fox.png" },
-    { service: "Disney+", date: new Date("November 12, 2019"), logo: "logos/disneyplus.png" },
-    { service: "CBS", date: new Date("January 1, 1929"), logo: "logos/cbs.png" },
-    { service: "Prime Video", date: new Date("September 7, 2006"), logo: "logos/primevideo.png" },
-    { service: "NBC", date: new Date("November 15, 1926"), logo: "logos/nbc.png" },
-    { service: "Hulu", date: new Date("October 29, 2007"), logo: "logos/hulu.png" },
+    { service: "Netflix", date: new Date("August 29, 1997"), logo: "netflix.png" },
+    { service: "Fox", date: new Date("October 9, 1986"), logo: "fox.png" },
+    { service: "Disney+", date: new Date("November 12, 2019"), logo: "disneyplus.png" },
+    { service: "CBS", date: new Date("January 1, 1929"), logo: "cbs.png" },
+    { service: "Prime Video", date: new Date("September 7, 2006"), logo: "primevideo.png" },
+    { service: "NBC", date: new Date("November 15, 1926"), logo: "nbc.png" },
+    { service: "Hulu", date: new Date("October 29, 2007"), logo: "hulu.png" },
   ];
 
   // Sort data by date
